@@ -1,0 +1,276 @@
+body {
+  font-family: "游ゴシック体", "Yu Gothic", sans-serif;
+  margin: 0;
+  background-color: #f9f9f2;
+  color: #333;
+}
+
+section {
+  border-top: 1px solid #ccc;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center; /* ← 最初中央寄せにする */
+  align-items: center;
+  position: relative;       /* クリニック名を絶対位置で右端に置くため */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #444;
+}
+
+.clinic-name {
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+  color: #333;
+}
+
+.main-visual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.main-image {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+}
+
+.logo-section {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px; /* 例: 60px → 100px に拡大 */
+  margin-bottom: 10px;
+}
+
+.logo-section h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.logo-section p {
+  font-size: 12px;
+  color: #555;
+}
+
+.about {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* ← 左揃えに戻す */
+}
+
+.about h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.about p {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.about .notice {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.conditions {
+  background-color: #ffffff;  /* 白背景 */
+  border-radius: 12px;        /* 角を丸く */
+  padding: 20px;
+  margin-top: 30px;
+  color: #333333;             /* 黒文字 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* ふんわり影（任意） */
+}
+
+.conditions h3 {
+  font-size: 16px;
+  color: #1a843d;
+  margin-bottom: 10px;
+}
+
+.conditions p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.menu {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* ← 左揃えに戻す */
+}
+
+.menu h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.menu h3 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.menu h4 {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.menu-block li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.hours {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.hours h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.schedule-table {
+  margin: 0 auto 30px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.schedule-table td {
+  padding: 8px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.reservation h3 {
+  margin-top: 40px;
+  font-size: 18px;
+  border-top: 1px dashed #888;
+  padding-top: 20px;
+}
+
+.reservation h4 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.reservation p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.access {
+  width: 80%;
+  max-width: 800px; /* ← 他セクションと同じ */
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.access h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.access-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.access-info {
+  flex: 1 1 55%;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.access-info p {
+  margin-bottom: 10px;
+}
+
+.faq {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.faq h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
