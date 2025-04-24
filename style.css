@@ -1,7 +1,7 @@
 body {
   font-family: "游ゴシック体", "Yu Gothic", sans-serif;
   margin: 0;
-  background-color: #f9f9f2;
+  background-color: #fcfcf9;
   color: #333;
 }
 
@@ -53,7 +53,6 @@ section {
 }
 
 .main-visual {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -68,24 +67,46 @@ section {
 }
 
 .logo-section {
-  width: 40%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
   padding: 20px;
 }
 
 .logo {
-  width: 100px; /* 例: 60px → 100px に拡大 */
+  width: 150px;
   margin-bottom: 10px;
 }
 
 .logo-section h1 {
-  font-size: 20px;
+  font-size: 30px;
   margin: 10px 0;
 }
 
 .logo-section p {
-  font-size: 12px;
+  font-size: 16px;
   color: #555;
+}
+
+.clinic-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.clinic-image {
+  text-align: center;
+  max-width: 300px;
+}
+
+.clinic-thumbnail {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
 .about {
@@ -118,11 +139,12 @@ section {
   border-radius: 12px;        /* 角を丸く */
   padding: 20px;
   margin-top: 30px;
+  margin-bottom: 30px;
   color: #333333;             /* 黒文字 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* ふんわり影（任意） */
 }
 
-.conditions h3 {
+.conditions h4 {
   font-size: 16px;
   color: #1a843d;
   margin-bottom: 10px;
@@ -157,17 +179,31 @@ section {
 .menu h4 {
   margin-top: 30px;
   font-size: 16px;
-  font-weight: bold;
 }
 
-.menu-block ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.menu p {
+  margin-left: 30px;
 }
 
-.menu-block li {
-  margin-bottom: 12px;
-  line-height: 1.6;
+.seitai {
+  width: 700px;
+}
+
+.yomogi-single {
+  width: 700px;
+}
+
+.yomogi-double {
+  width: 700px;
+}
+
+.payment {
+  background-color: #ffffff;  /* 白背景 */
+  border-radius: 12px;        /* 角を丸く */
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* ふんわり影（任意） */
 }
 
 .hours {
@@ -198,11 +234,21 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
-.reservation h3 {
-  margin-top: 40px;
-  font-size: 18px;
-  border-top: 1px dashed #888;
-  padding-top: 20px;
+.reservation {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.reservation h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
 }
 
 .reservation h4 {
@@ -210,17 +256,21 @@ section {
   margin-top: 20px;
 }
 
+.reservation h5 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .reservation p {
-  font-size: 14px;
   line-height: 1.8;
   margin: 10px 0;
 }
 
 .access {
   width: 80%;
-  max-width: 800px; /* ← 他セクションと同じ */
+  max-width: 800px;
   margin: 0 auto;
-  padding: 40px 20px;
   text-align: left;
 }
 
@@ -233,17 +283,21 @@ section {
   margin-bottom: 20px;
 }
 
-.access-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
+.map {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.map-frame {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  display: block;
 }
 
 .access-info {
   flex: 1 1 55%;
-  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -255,7 +309,6 @@ section {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 20px;
   text-align: left;
 }
 
@@ -263,14 +316,12 @@ section {
   font-size: 20px;
   color: #1a843d;
   border-bottom: 4px solid #1a843d;
-  display: inline-block;
   padding-bottom: 4px;
   margin-bottom: 20px;
 }
 
 .faq-item {
   margin-bottom: 20px;
-  font-size: 14px;
   line-height: 1.8;
 }
 
