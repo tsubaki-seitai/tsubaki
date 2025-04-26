@@ -172,7 +172,7 @@ section {
 }
 
 .menu h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 20px 0 10px;
 }
 
@@ -324,4 +324,77 @@ section {
   margin-bottom: 20px;
   line-height: 1.8;
 }
+
+.googleCalendar iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}
+
+/* Googleカレンダー（PC表示） */
+@media (min-width: 960px) {
+  .googleCalendar iframe {
+    height: 600px;
+  }
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .clinic-name {
+    position: static;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: right;
+    width: 100%;
+  }
+
+  .main-visual {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .main-image {
+    width: 80%;
+  }
+
+  .logo-section h1 {
+    font-size: 24px;
+  }
+
+  .logo-section p {
+    font-size: 14px;
+  }
+
+  .clinic-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about,
+  .menu,
+  .hours,
+  .reservation,
+  .access,
+  .faq {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .conditions,
+  .payment {
+    padding: 15px;
+  }
+
+  .map-frame,
+  .googleCalendar iframe {
+    height: 300px;
+  }
+}
+
 
