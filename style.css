@@ -28,9 +28,9 @@ section {
 
 .nav-container {
   display: flex;
-  justify-content: center; /* ← 最初中央寄せにする */
+  justify-content: center;
   align-items: center;
-  position: relative;       /* クリニック名を絶対位置で右端に置くため */
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -62,12 +62,6 @@ section {
   justify-content: center;
   padding: 30px 0;
   background-color: #fff;
-}
-
-.main-image {
-  width: 50%;
-  max-width: 600px;
-  height: auto;
 }
 
 .logo-section {
@@ -117,7 +111,7 @@ section {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  text-align: left; /* ← 左揃えに戻す */
+  text-align: left;
 }
 
 .about h2 {
@@ -139,13 +133,13 @@ section {
 }
 
 .conditions {
-  background-color: #ffffff;  /* 白背景 */
-  border-radius: 12px;        /* 角を丸く */
+  background-color: #ffffff;
+  border-radius: 12px;
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #333333;             /* 黒文字 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* ふんわり影（任意） */
+  color: #333333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .conditions h4 {
@@ -163,7 +157,7 @@ section {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  text-align: left; /* ← 左揃えに戻す */
+  text-align: left;
 }
 
 .menu h2 {
@@ -202,12 +196,12 @@ section {
 }
 
 .payment {
-  background-color: #ffffff;  /* 白背景 */
-  border-radius: 12px;        /* 角を丸く */
+  background-color: #ffffff;
+  border-radius: 12px;
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* ふんわり影（任意） */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .hours {
@@ -351,8 +345,8 @@ section {
   }
 
   .nav {
-    flex-direction: row; /* 横並びだけ */
-    flex-wrap: wrap;     /* はみ出たら折り返す */
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
