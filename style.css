@@ -397,4 +397,44 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  /* メニュー内の画像を縮小対応 */
+  .seitai,
+  .yomogi-single,
+  .yomogi-double {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ヘッダー部分のナビメニューとクリニック名の整え */
+  .header {
+    padding: 10px;
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .nav a {
+    font-size: 14px;
+  }
+
+  /* main-visualにflex指定（スマホ対応含む） */
+  .main-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* カレンダーと地図も再確認 */
+  .googleCalendar iframe,
+  .map-frame {
+    width: 100%;
+    height: 300px;
+  }
+}
+
 
