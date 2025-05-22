@@ -232,6 +232,13 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
+.hours-note {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
 .reservation {
   width: 80%;
   max-width: 800px;
