@@ -342,6 +342,33 @@ section {
   }
 }
 
+.amenities {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.breakspace {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.toilet {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
 /* スマホ用 */
 @media (max-width: 768px) {
   .nav-container {
