@@ -309,6 +309,32 @@ section {
   margin-bottom: 10px;
 }
 
+.better {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.better h2 {
+  font-size: 20px;
+  color: #1a843d;
+  border-bottom: 4px solid #1a843d;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.better-title {
+  display: inline-block;
+  border-bottom: 2px solid #2c7a7b;
+  padding-bottom: 2px;
+}
+
+.better-item {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
 .faq {
   width: 80%;
   max-width: 800px;
@@ -375,7 +401,7 @@ section {
   }
 
   .nav a {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .clinic-name {
